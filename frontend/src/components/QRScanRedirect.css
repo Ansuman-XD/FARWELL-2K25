@@ -1,0 +1,81 @@
+.qr-scan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#qr-reader {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scan-button, .stop-button {
+  padding: 14px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.scan-button {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.scan-button:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+}
+
+.stop-button {
+  background-color: #f44336;
+  color: white;
+  box-shadow: 0 4px 10px rgba(244, 67, 54, 0.3);
+}
+
+.stop-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
+
+.scan-icon {
+  margin-right: 8px;
+  font-size: 22px;
+}
+
+.scan-instructions {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.scan-instructions p {
+  color: #555;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  #qr-reader {
+    max-width: 300px;
+  }
+  
+  .scan-button, .stop-button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

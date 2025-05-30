@@ -1,0 +1,124 @@
+.warning-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 80vh;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.warning-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: shake 0.8s;
+}
+
+.warning-title {
+  color: #f44336;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.student-info {
+  background-color: #fff9c4;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.student-name, .student-roll {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.warning-message {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.scan-again-button, .register-button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scan-again-button {
+  background-color: #ff9800;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.scan-again-button:hover {
+  background-color: #f57c00;
+  transform: translateY(-2px);
+}
+
+.register-button {
+  background-color: #2196f3;
+  color: white;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+.register-button:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .warning-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .warning-icon {
+    font-size: 60px;
+  }
+  
+  .warning-title {
+    font-size: 1.8em;
+  }
+  
+  .student-info {
+    padding: 12px 20px;
+  }
+  
+  .scan-again-button, .register-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}

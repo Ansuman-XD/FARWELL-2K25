@@ -1,0 +1,142 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 80vh;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: bounceIn 0.8s;
+}
+
+.success-title {
+  color: #4CAF50;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.student-info {
+  background-color: #f0f8ff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.student-name, .student-roll {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.success-message {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.confetti-animation {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.confetti {
+  position: absolute;
+  font-size: 24px;
+  animation: confettiFall 3s infinite linear;
+}
+
+.confetti:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.confetti:nth-child(2) {
+  left: 30%;
+  animation-delay: 0.5s;
+}
+
+.confetti:nth-child(3) {
+  left: 50%;
+  animation-delay: 1s;
+}
+
+.confetti:nth-child(4) {
+  left: 70%;
+  animation-delay: 1.5s;
+}
+
+.back-button {
+  background-color: #6a8e7a;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(106, 142, 122, 0.3);
+}
+
+.back-button:hover {
+  background-color: #577a68;
+  transform: translateY(-2px);
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .success-icon {
+    font-size: 60px;
+  }
+  
+  .success-title {
+    font-size: 1.8em;
+  }
+  
+  .student-info {
+    padding: 12px 20px;
+  }
+}
